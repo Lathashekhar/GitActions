@@ -117,6 +117,7 @@ jobs:
            - name: Build and push
              uses: docker/build-push-action@v6
              with:
+              contyext: .
               push: true
               tags: lathashekhar10/bankapp:latest
               file: ./Dockerfile
