@@ -117,7 +117,6 @@ jobs:
          - name: Build and Push Docker image
            uses: docker/build-push-action@v6
            with:
-            context: .
             push: true
             tags: lathashekhar10/bankapp:latest
             file: ./Dockerfile
