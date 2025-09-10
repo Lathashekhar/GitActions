@@ -118,6 +118,6 @@ jobs:
              uses: docker/build-push-action@v6
              with:
               push: true
-              tags: bankapp:latest
+              tags: lathashekhar10/bankapp:latest
           
              
