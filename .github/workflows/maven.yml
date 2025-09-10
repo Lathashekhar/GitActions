@@ -104,10 +104,8 @@ jobs:
            with:
              name: app-jar
              path: app  # this will download JAR to ./app folder
-         - name: Ensure JAR is in build context
-           run: |
-            mkdir -p app
-            cp app/*.jar ./app/
+             
+         - name: Verify JAR is in build context
             ls -l app/
         
          - name: Login to Docker Hub
