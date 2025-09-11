@@ -4,10 +4,10 @@ EXPOSE 8080
 
 RUN ls 
 
-ENV APP_HOME=/usr/src/app
+ENV /usr/src/app
 
-COPY app/*.jar app.jar
+COPY ./app/*.jar /usr/src/app/app.jar
 
-WORKDIR $APP_HOME
+WORKDIR /usr/src/app
 
 CMD ["java", "-jar", "app.jar"]
